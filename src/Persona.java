@@ -42,8 +42,7 @@ public class Persona {
     }
 
     public void calcularFechaNacimiento(){
-        this.edad = edad;
-        Integer fechaNacimiento = 2024 - edad;
+        Integer fechaNacimiento = 2024 - this.edad;
         System.out.println("La fecha de nacimiento es: " + fechaNacimiento);
     }
 }

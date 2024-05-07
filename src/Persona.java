@@ -10,6 +10,11 @@ public class Persona {
     }
 
     public void establecerNombre(String nombre){
+        for (char caracters : nombre.toCharArray()){
+            if (Character.isDigit(caracters)) {
+                System.out.println("El nombre no puede tener numeros.");
+            }
+        }
         this.nombre = nombre;
     }
 
@@ -18,6 +23,9 @@ public class Persona {
     }
 
     public void establecerEdad(Integer edad){
+        if(edad < 0){
+            String mensaje = "La edad no puede ser un numero negativo";
+        }
         this.edad = edad;
     }
 

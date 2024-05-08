@@ -7,6 +7,8 @@ public class Empleado extends Persona implements Trabajador{
 
     @Override
     public void realizarTarea() {
-        System.out.println("Realizando tarea laboral.");
+        Trabajador tarea = () -> {
+            System.out.println("Realizando tarea laboral.");
+        };
     }
 }

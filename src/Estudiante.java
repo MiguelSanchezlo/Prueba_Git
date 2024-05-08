@@ -4,4 +4,9 @@ public class Estudiante extends Persona {
         super(nombre, fechaNacimiento, edad);
         this.grado = grado;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + ". El grado que cursa es " + grado;
+    }
 }

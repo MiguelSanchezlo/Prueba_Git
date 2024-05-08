@@ -45,4 +45,8 @@ public class Persona {
         Integer fechaNacimiento = 2024 - this.edad;
         System.out.println("La fecha de nacimiento es: " + fechaNacimiento);
     }
+
+    public String toString(){
+        return "Hola, " + nombre;
+    }
 }

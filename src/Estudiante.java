@@ -1,4 +1,4 @@
-public class Estudiante extends Persona {
+public class Estudiante extends Persona implements Trabajador {
     private String grado;
 
     // Constructor propio de la clase
@@ -14,5 +14,10 @@ public class Estudiante extends Persona {
     @Override
     public String toString(){
         return super.toString() + ". El grado que cursa es " + grado;
+    }
+
+    @Override
+    public void realizarTarea(){
+        System.out.println("Realizando tarea escolar.");
     }
 }

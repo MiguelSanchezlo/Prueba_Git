@@ -1,8 +1,12 @@
-public class Empleado extends Persona implements Trabajador{
+public class Empleado implements Trabajador{
     private String cargo;
+    private String nombre;
+    private Integer salario;
 
-    public Empleado(String nombre, String fechaNacimiento, Integer edad) {
-        super(nombre, fechaNacimiento, edad);
+    public Empleado(String cargo, String nombre, Integer salario) {
+        this.cargo = cargo;
+        this.nombre = nombre;
+        this.salario = salario;
     }
 
     @Override
